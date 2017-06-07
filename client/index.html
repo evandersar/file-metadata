@@ -3,12 +3,10 @@
   <head>
     <title>File Metadata Microservice</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style></style>
-    <script></script>
   </head>
   <body>
       <h3>Submit a file to view its filesize.</h3>
-      <form enctype="multipart/form-data">
+      <form id="uploadForm" enctype="multipart/form-data" action="/get-file-size" method="post">
           <input type="file" id="userFile" name="userFile"/>
           <input type="submit" id="uploadFile" name="uploadFile"/>
       </form>
